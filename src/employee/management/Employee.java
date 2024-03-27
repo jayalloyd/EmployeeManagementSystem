@@ -6,6 +6,15 @@ public class Employee {
 	private int emp_id;
     private String emp_dept;
     private String emp_position;
+    
+    
+	public Employee(String emp_name, int emp_id, String emp_dept, String emp_position) {
+		super();
+		this.emp_name = emp_name;
+		this.emp_id = emp_id;
+		this.emp_dept = emp_dept;
+		this.emp_position = emp_position;
+	}
 	public String getEmp_name() {
 		return emp_name;
 	}
@@ -32,4 +41,9 @@ public class Employee {
 	}
     
     
+	
+	
+	
+	
+	
 }
