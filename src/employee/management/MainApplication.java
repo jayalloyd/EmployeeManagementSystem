@@ -6,7 +6,7 @@ public class MainApplication {
 public static void main(String a[]) {
 	System.out.println("Employee Management System");
 	Scanner input=new Scanner(System.in);
-	System.out.println("Enter a valid input.1.Display Employee Information 2.Adding Employee Information 3.Updating Employee Information 4.Quit");
+	System.out.println("Enter a valid input.1.Display Employee Information 2.Adding Employee Information 3.Updating Employee Information 4.Quit 5.Press any option to contnue");
 	
 	int inputOption=input.nextInt();
 	
@@ -19,9 +19,12 @@ public static void main(String a[]) {
 	else if (inputOption==3) {
 		System.out.println("Updating Employee information");
 	}
-	else 
+	else  if (inputOption==4)
 		System.out.println(" Quit Application");
-	
+	else
+		
+		System.out.println(" Press any option to continue using the application again");
+
 	
 	
 	
