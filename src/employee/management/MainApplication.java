@@ -19,13 +19,17 @@ public static void main(String a[]) {
 do	{
 	    if (inputOption == 1) {
 	        System.out.println("Displaying Employee information");
-	        
-	        	for(Employee emp : emp_info) {
-	        emp.displayEmpInfo();
-	        	}
+	        for(Employee emp: emp_info) {
+	        	emp.displayEmpInfo();
+	        }
+	        	
 	        System.out.println("Press any option to continue");
 	    } else if (inputOption == 2) {
 	        System.out.println("Adding Employee information");
+	        Employee Employee=new Employee();
+            emp_info.add(Employee);
+            System.out.println("New employee added successfully.");
+           
 	        System.out.println("Press any option to continue");
 	    } else if (inputOption == 3) {
 	        System.out.println("Updating Employee information");
