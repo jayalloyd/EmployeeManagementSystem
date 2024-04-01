@@ -13,7 +13,7 @@ public class Employee {
     
     
 	public Employee(String emp_name, int emp_id, String emp_dept, String emp_position) {
-		;
+		
         this.emp_name=emp_name;
         this.emp_id=emp_id;
         this.emp_dept=emp_dept;
