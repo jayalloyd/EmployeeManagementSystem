@@ -1,5 +1,8 @@
 package employee.management;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Employee {
 
 	private String emp_name;
@@ -40,7 +43,9 @@ public class Employee {
 		this.emp_position = emp_position;
 	}
     
-    
+    public void displayEmpInfo() {
+    System.out.println("Employee details are :  "+emp_name +emp_id +emp_position +emp_dept);
+    }
 	
 	
 	
