@@ -1,7 +1,6 @@
 package employee.management;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Employee {
@@ -65,9 +64,31 @@ public class Employee {
     public void displayEmpInfo() {
     System.out.println("Employee details are :  "+emp_name +emp_id +emp_position +emp_dept);
     }
-	
-	
 
-	
-	
-}
+    public void updateEmpInfo(ArrayList<Employee>emp_info,int emp_id,String emp_name,
+    		String emp_dept,String emp_position) {
+    	
+        Scanner sc=new Scanner(System.in);
+
+		System.out.println("Enter the Employee ID : ");
+		emp_id=sc.nextInt();
+        for(Employee emp: emp_info) {
+        			
+        	if (emp_id==emp.getEmp_id()) {
+        		 
+        	System.out.println("Enter name :");
+        	 emp_name=sc.next();
+        	System.out.println("Enter Department :");
+        	 emp_dept=sc.next();
+        	System.out.println("Enter position:");
+        	 emp_position=sc.next();
+        	emp.setEmp_name(emp_name);
+            	emp.setEmp_dept(emp_dept);
+            	emp.setEmp_position(emp_position);
+            	System.out.println("Uptdated details are : "+emp_name  +emp_dept +emp_position);
+            	break;
+        }}
+       }
+        }
+
+    

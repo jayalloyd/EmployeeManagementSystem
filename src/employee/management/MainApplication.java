@@ -13,7 +13,7 @@ public static void main(String a[]) {
 	emp_info.add(new Employee("Lloyd",3,"civil","Building Automation Engineer"));
 	
 	Scanner input=new Scanner(System.in);
-	System.out.println("Enter a valid input.1.Display Employee Information 2.Adding Employee Information 3.Updating Employee Information 4.Quit ");
+	System.out.println("Enter a valid input.1.Display Employee Information 2.Adding Employee Information 3.updating Employee Information 4.Quit ");
 	
 	int inputOption=input.nextInt();
 do	{
@@ -32,7 +32,12 @@ do	{
            
 	        System.out.println("Press any option to continue");
 	    } else if (inputOption == 3) {
-	        System.out.println("Updating Employee information");
+	        System.out.println("updating Employee information");
+	        while(inputOption==3) {
+	    		for(Employee emp : emp_info) {
+	    			emp.updateEmpInfo(emp_info, inputOption, null, null, null);
+	    				break;}
+	    				break;}                       
 	        System.out.println("Press any option to continue");
 	    } else if (inputOption == 4) {
 	        System.out.println("Quit Application");
@@ -48,6 +53,7 @@ do	{
 	for(Employee emp : emp_info) {
 emp.displayEmpInfo();	}
 	}
+	
 
 }
 }
