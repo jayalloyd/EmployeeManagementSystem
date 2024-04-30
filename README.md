@@ -8,7 +8,7 @@ Employee Management System
 This repository is designed to help  to Beginners those who learn Core Java Concepts.
 
  Installation
-This  project is developed using core java concepts,by using Eclispse IDE .
+This  project is developed using core java concepts,by using Eclipse IDE .
 
  Basic Usage
 This project will be useful for beginners those who learn Java.
